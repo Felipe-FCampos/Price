@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --Grayish-Blue: #98a6bd;
+    --Cyan: #2ab2af;
+    --Bright-Yellow: #c0df34;
+    --Light-Gray: #e5eff5;
+}
+
+html {
+    background: var(--Light-Gray);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    background: white;
+    border-radius: 5px 5px 0px 0px  ;
+}
+
+.title h1 {
+    color: var(--Cyan);
+    margin-top: 28px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-size: 20px;
+    padding-top: 28px;
+}
+
+.title h2 {
+    margin-left: 24px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: var(--Bright-Yellow);
+}
+
+.title p {
+    padding-bottom: 32px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--Grayish-Blue);
+}
+
+.description {
+    background: var(--Cyan);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.subscription {
+    padding: 24px;
+}
+
+.subscription h2 {
+    margin-bottom: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.subscription p {
+    color: white;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.first .price {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.first .per {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    opacity: 75%;
+}
+
+.why {
+    background: #2ebebc;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.why h2 {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 24px;
+}
+
+.why p {
+    margin-left: 24px;
+    margin-bottom: 5px;
+    color: white;
+    opacity: 65%;
+}
+
+button {
+    background: #C0DF33;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 15px 89px 15px 89px;
+}
+
+
+@media(min-width:450px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 600px;
+    }
+
+
+    .main-title {
+        border-radius: 8px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subscription {
+        width: 100%;
+    }
+
+    .why {
+        width: 100%;
+    }
+}
